@@ -9,7 +9,6 @@ using namespace std;
 
 int main()
 {
-
     vector<double> a, b;
 
     fstream file;
@@ -76,8 +75,7 @@ int main()
         fout << sub_new_x[i] << "                   " << sub_new_y[i] << "\n";
     }
 
-    auto index_begin = 0;
-    for (int64_t i = index_begin; i <= n; ++i)
+    for (int64_t i = 0; i <= n; ++i)
     {
         if (new_x[i] >= x_vec[0])
         {

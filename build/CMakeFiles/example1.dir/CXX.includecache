@@ -7,8 +7,6 @@
 #IncludeRegexTransform: 
 
 /home/arseniy/Desktop/Darsy/Extrapolation.h
-fstream
--
 vector
 -
 iostream
@@ -16,14 +14,6 @@ iostream
 cstdlib
 -
 cmath
--
-limits
--
-memory
--
-algorithm
--
-iterator
 -
 
 /home/arseniy/Desktop/Darsy/Splines.h

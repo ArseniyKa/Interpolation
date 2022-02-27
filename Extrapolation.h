@@ -1,13 +1,8 @@
-#include <fstream>
 #include <vector>
 #include <iostream>
 #include <cstdlib>
 #include <cmath>
-#include <limits>
-#include <memory>
 
-#include <algorithm> // std::min_element
-#include <iterator>  // std::begin, std::end
 using namespace std;
 
 class ExponentExtrapolation
@@ -23,7 +18,6 @@ public:
         cout << "second_y_ " << second_y_ << " \n";
 
         double derivative_value = (second_y_ - first_y_ ) / dx_;
-        cout << "derivative_value " << derivative_value << " \n";
         b_coeff_ = -0.5 / first_x_ * derivative_value / first_y_;
         a_coeff_ = first_y_ * exp(b_coeff_ * first_x_ * first_x_);
 
