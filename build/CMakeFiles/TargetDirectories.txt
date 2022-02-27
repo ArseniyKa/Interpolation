@@ -1,0 +1,3 @@
+/home/arseniy/Desktop/Darsy/build/CMakeFiles/rebuild_cache.dir
+/home/arseniy/Desktop/Darsy/build/CMakeFiles/edit_cache.dir
+/home/arseniy/Desktop/Darsy/build/CMakeFiles/example1.dir

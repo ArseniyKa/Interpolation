@@ -1,0 +1,1 @@
+/home/arseniy/clang/clang+llvm-12.0.1-x86_64-linux-gnu-ubuntu-/bin/clang++     CMakeFiles/example1.dir/main.cpp.o  -o example1 
