@@ -1,3 +1,6 @@
-/home/arseniy/Desktop/Darsy/build/CMakeFiles/rebuild_cache.dir
-/home/arseniy/Desktop/Darsy/build/CMakeFiles/edit_cache.dir
-/home/arseniy/Desktop/Darsy/build/CMakeFiles/example1.dir
+/home/arseniy/Desktop/DarsyTask/Interpolation/build/CMakeFiles/rebuild_cache.dir
+/home/arseniy/Desktop/DarsyTask/Interpolation/build/CMakeFiles/edit_cache.dir
+/home/arseniy/Desktop/DarsyTask/Interpolation/build/CMakeFiles/myExe.dir
+/home/arseniy/Desktop/DarsyTask/Interpolation/build/src/CMakeFiles/rebuild_cache.dir
+/home/arseniy/Desktop/DarsyTask/Interpolation/build/src/CMakeFiles/edit_cache.dir
+/home/arseniy/Desktop/DarsyTask/Interpolation/build/src/CMakeFiles/libka1.dir

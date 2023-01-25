@@ -44,55 +44,102 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/arseniy/Desktop/Darsy
+CMAKE_SOURCE_DIR = /home/arseniy/Desktop/DarsyTask/Interpolation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/arseniy/Desktop/Darsy/build
+CMAKE_BINARY_DIR = /home/arseniy/Desktop/DarsyTask/Interpolation/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/example1.dir/all
+all: CMakeFiles/myExe.dir/all
+all: src/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/example1.dir/clean
+clean: CMakeFiles/myExe.dir/clean
+clean: src/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/example1.dir
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/libka1.dir/all
+
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/libka1.dir/clean
+
+.PHONY : src/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/myExe.dir
 
 # All Build rule for target.
-CMakeFiles/example1.dir/all:
-	$(MAKE) -f CMakeFiles/example1.dir/build.make CMakeFiles/example1.dir/depend
-	$(MAKE) -f CMakeFiles/example1.dir/build.make CMakeFiles/example1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arseniy/Desktop/Darsy/build/CMakeFiles --progress-num=1,2 "Built target example1"
-.PHONY : CMakeFiles/example1.dir/all
+CMakeFiles/myExe.dir/all: src/CMakeFiles/libka1.dir/all
+	$(MAKE) -f CMakeFiles/myExe.dir/build.make CMakeFiles/myExe.dir/depend
+	$(MAKE) -f CMakeFiles/myExe.dir/build.make CMakeFiles/myExe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arseniy/Desktop/DarsyTask/Interpolation/build/CMakeFiles --progress-num=4,5 "Built target myExe"
+.PHONY : CMakeFiles/myExe.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/example1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseniy/Desktop/Darsy/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/example1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseniy/Desktop/Darsy/build/CMakeFiles 0
-.PHONY : CMakeFiles/example1.dir/rule
+CMakeFiles/myExe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseniy/Desktop/DarsyTask/Interpolation/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/myExe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseniy/Desktop/DarsyTask/Interpolation/build/CMakeFiles 0
+.PHONY : CMakeFiles/myExe.dir/rule
 
 # Convenience name for target.
-example1: CMakeFiles/example1.dir/rule
+myExe: CMakeFiles/myExe.dir/rule
 
-.PHONY : example1
+.PHONY : myExe
 
 # clean rule for target.
-CMakeFiles/example1.dir/clean:
-	$(MAKE) -f CMakeFiles/example1.dir/build.make CMakeFiles/example1.dir/clean
-.PHONY : CMakeFiles/example1.dir/clean
+CMakeFiles/myExe.dir/clean:
+	$(MAKE) -f CMakeFiles/myExe.dir/build.make CMakeFiles/myExe.dir/clean
+.PHONY : CMakeFiles/myExe.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/libka1.dir
+
+# All Build rule for target.
+src/CMakeFiles/libka1.dir/all:
+	$(MAKE) -f src/CMakeFiles/libka1.dir/build.make src/CMakeFiles/libka1.dir/depend
+	$(MAKE) -f src/CMakeFiles/libka1.dir/build.make src/CMakeFiles/libka1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/arseniy/Desktop/DarsyTask/Interpolation/build/CMakeFiles --progress-num=1,2,3 "Built target libka1"
+.PHONY : src/CMakeFiles/libka1.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/libka1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseniy/Desktop/DarsyTask/Interpolation/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/libka1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseniy/Desktop/DarsyTask/Interpolation/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/libka1.dir/rule
+
+# Convenience name for target.
+libka1: src/CMakeFiles/libka1.dir/rule
+
+.PHONY : libka1
+
+# clean rule for target.
+src/CMakeFiles/libka1.dir/clean:
+	$(MAKE) -f src/CMakeFiles/libka1.dir/build.make src/CMakeFiles/libka1.dir/clean
+.PHONY : src/CMakeFiles/libka1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

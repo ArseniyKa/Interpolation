@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibka1.a  CMakeFiles/libka1.dir/Extrapolation.cpp.o CMakeFiles/libka1.dir/Splines.cpp.o
+/usr/bin/ranlib liblibka1.a

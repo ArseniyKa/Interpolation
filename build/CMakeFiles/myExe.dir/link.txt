@@ -1,0 +1,1 @@
+/home/arseniy/clang/clang+llvm-12.0.1-x86_64-linux-gnu-ubuntu-/bin/clang++     CMakeFiles/myExe.dir/main.cpp.o  -o myExe  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8 src/liblibka1.a /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8 

@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseniy/Desktop/DarsyTask/Interpolation/build/CMakeFiles /home/arseniy/Desktop/DarsyTask/Interpolation/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/arseniy/Desktop/DarsyTask/Interpolation/build/CMakeFiles /home/arseniy/Desktop/DarsyTask/Interpolation/build/src/CMakeFiles/progress.marks
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/arseniy/Desktop/DarsyTask/Interpolation/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,71 +97,87 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named myExe
+# Convenience name for target.
+src/CMakeFiles/libka1.dir/rule:
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/libka1.dir/rule
+.PHONY : src/CMakeFiles/libka1.dir/rule
 
-# Build rule for target.
-myExe: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 myExe
-.PHONY : myExe
+# Convenience name for target.
+libka1: src/CMakeFiles/libka1.dir/rule
 
-# fast build rule for target.
-myExe/fast:
-	$(MAKE) -f CMakeFiles/myExe.dir/build.make CMakeFiles/myExe.dir/build
-.PHONY : myExe/fast
-
-#=============================================================================
-# Target rules for targets named libka1
-
-# Build rule for target.
-libka1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libka1
 .PHONY : libka1
 
 # fast build rule for target.
 libka1/fast:
-	$(MAKE) -f src/CMakeFiles/libka1.dir/build.make src/CMakeFiles/libka1.dir/build
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(MAKE) -f src/CMakeFiles/libka1.dir/build.make src/CMakeFiles/libka1.dir/build
 .PHONY : libka1/fast
 
-main.o: main.cpp.o
+Extrapolation.o: Extrapolation.cpp.o
 
-.PHONY : main.o
+.PHONY : Extrapolation.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/myExe.dir/build.make CMakeFiles/myExe.dir/main.cpp.o
-.PHONY : main.cpp.o
+Extrapolation.cpp.o:
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(MAKE) -f src/CMakeFiles/libka1.dir/build.make src/CMakeFiles/libka1.dir/Extrapolation.cpp.o
+.PHONY : Extrapolation.cpp.o
 
-main.i: main.cpp.i
+Extrapolation.i: Extrapolation.cpp.i
 
-.PHONY : main.i
+.PHONY : Extrapolation.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/myExe.dir/build.make CMakeFiles/myExe.dir/main.cpp.i
-.PHONY : main.cpp.i
+Extrapolation.cpp.i:
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(MAKE) -f src/CMakeFiles/libka1.dir/build.make src/CMakeFiles/libka1.dir/Extrapolation.cpp.i
+.PHONY : Extrapolation.cpp.i
 
-main.s: main.cpp.s
+Extrapolation.s: Extrapolation.cpp.s
 
-.PHONY : main.s
+.PHONY : Extrapolation.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/myExe.dir/build.make CMakeFiles/myExe.dir/main.cpp.s
-.PHONY : main.cpp.s
+Extrapolation.cpp.s:
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(MAKE) -f src/CMakeFiles/libka1.dir/build.make src/CMakeFiles/libka1.dir/Extrapolation.cpp.s
+.PHONY : Extrapolation.cpp.s
+
+Splines.o: Splines.cpp.o
+
+.PHONY : Splines.o
+
+# target to build an object file
+Splines.cpp.o:
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(MAKE) -f src/CMakeFiles/libka1.dir/build.make src/CMakeFiles/libka1.dir/Splines.cpp.o
+.PHONY : Splines.cpp.o
+
+Splines.i: Splines.cpp.i
+
+.PHONY : Splines.i
+
+# target to preprocess a source file
+Splines.cpp.i:
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(MAKE) -f src/CMakeFiles/libka1.dir/build.make src/CMakeFiles/libka1.dir/Splines.cpp.i
+.PHONY : Splines.cpp.i
+
+Splines.s: Splines.cpp.s
+
+.PHONY : Splines.s
+
+# target to generate assembly for a file
+Splines.cpp.s:
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(MAKE) -f src/CMakeFiles/libka1.dir/build.make src/CMakeFiles/libka1.dir/Splines.cpp.s
+.PHONY : Splines.cpp.s
 
 # Help Target
 help:
@@ -171,11 +187,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... myExe"
 	@echo "... libka1"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Extrapolation.o"
+	@echo "... Extrapolation.i"
+	@echo "... Extrapolation.s"
+	@echo "... Splines.o"
+	@echo "... Splines.i"
+	@echo "... Splines.s"
 .PHONY : help
 
 
@@ -187,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/arseniy/Desktop/DarsyTask/Interpolation/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
